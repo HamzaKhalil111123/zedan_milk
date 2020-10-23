@@ -1,0 +1,731 @@
+/*******  El fehrs    ***********/
+/*
+1- ** reset element**
+2- ** general elm  **
+3- **     Header    **
+
+*/
+
+/* Reset Element */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul  li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end reset.css*/
+/*start general*/
+.container-2{
+	width: 90%;
+	margin: auto;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+.clearfix{
+	clear: both;
+}
+.d-flex{
+	display:flex; 
+}
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+}
+.overnay{
+	background: rgba(0,0,0,0.5);
+}
+.my-slider img{
+width: 100%;
+}
+/*end general*/
+/**** header******/
+header{
+	position: relative;
+}
+header .photo{ 
+	background-image: url(../img/logo-3.jpg  );
+	background-attachment:fixed;
+	background-position: 0;
+	background-repeat: no-repeat;   
+	background-size: cover; 
+	height: 100vh;
+}
+.market-header{
+	background-image: url(../img/market-logo3.jpg );
+	
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.up-navbar{
+	padding: 15px 0px;
+
+}
+.up-navbar .container ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+.up-navbar .container ul.list-inline i{
+padding: 10px ;
+font-size: 20px
+}
+header .un-navbar {
+background: rgba(0,0,0,0.85);
+top: 0px;
+transition: all .4s;
+border-bottom: 1px solid #37332a;
+}
+header .un-navbar .navbar-brand{
+	padding: 10px 0px;
+}
+
+header .un-navbar .container h1 {
+font-size: 30px;
+font-weight: bold;
+color: #e2e2e2;
+padding-top: 10px; 
+text-decoration: none;
+transition: .8s;
+}
+.un-navbar .navbar-nav .nav-item {
+	margin:10px 15px;
+}
+.un-navbar .navbar-nav .nav-item .nav-link{
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+transition: .5s;
+}
+.un-navbar .navbar-nav .nav-item:hover a {
+	color: #cda45e;
+	border: 1px solid #eee;
+}
+.un-navbar .navbar-nav .btn-nav{
+
+    margin: 0px 3px;
+    border: 1px solid  #cda45e;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+}
+/*icon-header*/
+.icon-header{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.icon-header .dd-d{
+	width: 142px;
+	 height: 120px;
+	 padding: 40px 20px;
+	 border: 2px solid rgba(255, 255, 255, 0.3);
+	 margin: 5px;
+     transition:  0.5s;
+}
+.icon-header .dd-d:hover {
+	border: 2px solid #cda45e;
+}
+.icon-header .dd-d h5:hover {
+	color:  #cda45e;
+
+}
+.icon-header .dd-d a h5{
+	font-size: 25px;
+	color: #fff;
+	transition: 0.5s;
+}
+.icon-header .dd-d a {
+	text-decoration: none;
+	text-align: center;
+}
+/* *****   pege of market    ****** */
+.market-header{
+	position: relative;
+
+}
+.we-us{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(10, 9, 6, 0.38);
+}
+.we-us .about-us{
+	text-align:center;
+
+}
+.we-us .about-us h1 {
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: silver;
+	padding: 30px;
+}
+.we-us .about-us p {
+	font-size: 25px;
+	letter-spacing: 1px;
+	color:#a8a495;
+	padding: 20px 15px ;
+
+}
+.we-us .about-us button {
+	border: 1px solid transparent;
+	background-color: transparent;
+	padding: 20px 0px;
+
+}
+.we-us .about-us button a {
+	font-size: 20px;
+	text-decoration:none;
+	color: #fff;
+	padding: 10px;
+}
+.we-us .about-us button:hover a { 
+	font-size: 30px;
+	border: 1px solid black
+}
+/* start section of market */
+.chese-img {
+	background-image: url(../img/logo-2.jpg );
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.chese-img-2 {
+	background-image: url(../img/chese-img-2.jpg );
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.chese-img .hed-d {
+	padding: 30px 0px;
+	background: rgba(0,0,0,0.75);
+}
+.chese-img .hed-d  h3{
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase ;
+}
+.chese-img .hed-d p{
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 30px 0px;
+}
+.chese-img .img img {
+	width: 100%;
+	height: 345px;
+	/* padding: 10px 10px; */
+	margin: 10px 10px;
+	border: 4px solid #ffd70882;
+    opacity: .9;
+}
+
+.chese-img .hedding .hedding-h{
+font-size: large;
+text-transform: uppercase;
+line-height: 2px;
+letter-spacing: 2px;
+padding: 20px 0px ;
+color: yellow;
+text-align: center;
+}
+.chese-img .hedding .hedding-p{
+font-size: 20px;
+letter-spacing: 1px;
+color: #fff;
+text-transform: capitalize;
+text-transform: uppercase;
+padding: 25px 0px;
+text-align: left
+}
+.col-4 img {
+	margin: 10px -15px;
+	/* padding: 10px 10px; */
+	width: 300px;
+	height: 340px;	  
+    border: 4px solid #ffd70882;
+    opacity: .9;
+}
+
+
+/* start page of farm */
+.farm-header {
+	background-image: url(../img/caw\ \(3\).jpg );
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+}
+.cards{
+	padding: 40px 0px ;
+}
+.cards .card{
+	border:none;
+}
+.cards .card h5{
+padding-top: 10px;
+font-size: 30px;
+font-family: cursive;
+}
+.cards .card img{
+	width: 90%;
+	height: 50vh;
+}
+.cards .card p {
+	padding-top: 10px;
+	font-size: 20px;
+	font-family: cursive;
+}
+.cards .card .btn{
+	margin-top: 20px;
+}
+
+.farm-card{
+	background-image: url(../img/caw\ \(8\).jpg );
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+/* strat filter */
+.container {
+	overflow: hidden;
+  }
+  
+  .filterDiv {
+	float: left;
+	background-color:#eee;
+	height: 100%;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 20px;
+	/* display: none; Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  /* .show {
+	display: block;
+  }
+   */
+  /* Style the buttons */
+  .filterDiv img {
+	border: 1px solid #fff ;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	width: 250px;
+	height: 250px;
+  }
+  
+  /* Add a light grey background on mouse-over */
+
+  /* Add a dark background to the active button */
+  .btn.active {
+	background-color: #666;
+	color: white;
+  } 
+ /* end filters */
+/* start page of lap */
+.lap-header{
+	background-image: url(../img/slide\ \(3\).jpg );
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+}
+
+/* end page of lap */
+/* ------------------------------------------------------- */
+/* # Contact */
+/* --------------------------------------------------------------*/ */
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  background: #ffc451;
+  color: #151515;
+  float: left;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #484848;
+}
+
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #ffc451;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #ffc451;
+  border: 0;
+  padding: 10px 24px;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #ffcd6b;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+	background: black;
+	padding: 0 0 30px 0;
+	color: #fff;
+	font-size: 14px;
+  }
+  
+  #footer .footer-top {
+	background: #151515;
+	border-bottom: 1px solid #222222;
+	padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+	font-size: 28px;
+	margin: 0 0 20px 0;
+	padding: 2px 0 2px 0;
+	line-height: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: blanchedalmond;
+  }
+  
+  #footer .footer-top .footer-info h3 span {
+	color: #ffc451;
+  }
+  
+  #footer .footer-top .footer-info p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #292929;
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 4px;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+	background: #ffc451;
+	color: #151515;
+	text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	position: relative;
+	padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: #ffc451;
+	font-size: 18px;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	color: #fff;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+	text-decoration:none;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	color: #ffc451;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+	margin-top: 30px;
+	background: #fff;
+	padding: 6px 10px;
+	position: relative;
+	border-radius: 4px;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="email"] {
+	border: 0;
+	padding: 4px;
+	width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: -2px;
+	bottom: 0;
+	border: 0;
+	background: none;
+	font-size: 16px;
+	padding: 0 20px;
+	background: #ffc451;
+	color: #151515;
+	transition: 0.3s;
+	border-radius: 0 4px 4px 0;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+	background: #ffcd6b;
+  }
+  
+  #footer .copyright {
+	text-align: center;
+	padding-top: 30px;
+  }
+  
+  #footer .credits {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+  }
+  /*  --------------------------------------------
+  RESPONSEF THE WEB
+  /* --------------------------------------------- */
+/* in market page */
+@media (max-width:767px) {
+.we-us .about-us{
+	width: 260px;;
+}
+.we-us .about-us h1{
+    font-size: 27px;
+    padding: 0px;
+}
+.we-us .about-us p{
+	padding: 17px 10px;
+	font-size: 17px;
+}
+.we-us .about-us button:hover a{
+padding: 0px;
+}
+.chese-img .hed-d {
+    padding: 15px 0px;
+}
+.chese-img .hed-d p{
+font-size: 15px;
+padding: 5px 10px;
+}
+.chese-img .img img {
+	margin: 10px -15px;
+
+}
+
+
+
+}
